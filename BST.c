@@ -62,26 +62,7 @@ BST insert(BST tree,item el)
 
     return tree;
 }
-/*
-int isBstRecursive(BST tree)
-{
-    if(!tree)
-        return 1;
 
-    if(!tree->left && !isEmptyBST(tree->right))
-    {
-        if(getItem(tree) > getItem(tree->right))
-            return 0;
-    }
-    if(!tree->right && !isEmptyBST(tree->left))
-    {
-        if(getItem(tree) < getItem(tree->left))
-           return 0;
-    }
-    if((!isEmptyBST(tree->right)) && !isEmptyBST(tree->left))
-        return isBstRecursive(tree->left) && isBstRecursive(tree->right);
-}
-*/
 int contains(BST tree,item el)
 {
     if(!tree)
